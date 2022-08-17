@@ -3,7 +3,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 
 // TODO: Create an array of questions for user input
-const questions = [
+const userQuestions = [
     {
         type: 'input',
         message: 'What is the title/name of your application/project?',
@@ -57,10 +57,21 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(README.md, data) {
+   fs.writeFile(`README.md`, `${generateMarkdown(data)}`, (err) =>
+   err ? console.error(err) : console.log('Success!')
+ );
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+   inquirer
+   .prompt(userQuestions)
+   .then((data) => {
+     console.log(data);
+     writeToFile('README', data);
+   })
+}
 
 // Function call to initialize app
 init();
