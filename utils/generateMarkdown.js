@@ -45,10 +45,11 @@ return `# ${data.name}
 ${licenseBadge}
 ## Table of Contents
 * [Description](#description)
-* [Technolgies Used](#technolgies)
+* [Technology Used](#technology-used)
 * [Installation](#installation)
 * [Usage](#usage)
-* [Contribution](#contribution-guide)
+* [Contribution](#contribution)
+* [License](#license)
 * [Testing](#testing)
 * [Questions](#questions)
 ## Description
@@ -61,14 +62,14 @@ ${data.installation}
 ${data.usage}
 ## Contribution
 ${data.contribution}
-## License Section
+## License
 ${licenseBadge}
 <br>
 ${licenseLink}
 ## Testing
 ${data.test}
 ## Questions
-If you have questions, you can either open a issue in my Github repository <br>
+If you have questions or any queries about contributing, you can either open a issue in my Github repository <br>
 GitHub: <https://github.com/${data.github}> <br>
 <br>
 Or you can send me an email directly <br>
