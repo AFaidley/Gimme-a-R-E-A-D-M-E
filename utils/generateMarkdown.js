@@ -1,3 +1,4 @@
+// Global variables
 let licenseBadge = '';
 let licenseLink = '';
 
